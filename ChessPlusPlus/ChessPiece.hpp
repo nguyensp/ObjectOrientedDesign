@@ -1,14 +1,17 @@
 #pragma once
 
 class ChessPiece {
-public:
+private:
     char symbol;
     bool killed;
     bool white;
-    
+public:
     ChessPiece();
+    ChessPiece(char s);
     
     bool isKilled();
     bool isWhite();
-    virtual bool canMove();
+    bool canMove();
+    
+    char getSymbol();
 };

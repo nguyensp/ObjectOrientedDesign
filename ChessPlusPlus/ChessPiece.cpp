@@ -1,7 +1,12 @@
 #include "ChessPiece.hpp"
 
 ChessPiece::ChessPiece() {
-    symbol = '?';
+    symbol = '_';
+    killed = false;
+}
+
+ChessPiece::ChessPiece(char s) {
+    symbol = s;
     killed = false;
 }
 
@@ -15,4 +20,8 @@ bool ChessPiece::isWhite() {
 
 bool ChessPiece::canMove() {
     return false;
+}
+
+char ChessPiece::getSymbol() {
+    return symbol;
 }
