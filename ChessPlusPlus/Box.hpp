@@ -11,4 +11,6 @@ public:
     
     int getXCoordinate();
     int getYCoordinate();
+    
+    void setChessPiece(ChessPiece p);
 };

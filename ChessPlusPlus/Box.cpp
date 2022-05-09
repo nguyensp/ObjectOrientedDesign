@@ -12,3 +12,7 @@ int Box::getXCoordinate() {
 int Box::getYCoordinate() {
     return this->yCoordinate;
 }
+
+void Box::setChessPiece(ChessPiece p) {
+    chessPiece = p;
+}

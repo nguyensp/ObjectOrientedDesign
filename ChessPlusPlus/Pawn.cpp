@@ -1,6 +1,6 @@
 #include "Pawn.hpp"
 
-Pawn::Pawn() : ChessPiece{'P'} {
+Pawn::Pawn() : ChessPiece('P') {
 }
 
 bool Pawn::canMove() {

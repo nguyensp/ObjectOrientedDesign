@@ -2,9 +2,9 @@
 
 #include "ChessPiece.hpp"
 
-class Pawn : public ChessPiece  {
+class Queen : public ChessPiece {
 public:
-    Pawn();
+    Queen();
     
     bool canMove();
 };
